@@ -1,2 +1,2 @@
-import"./assets/styles-c6276e42.js";console.log("Form");
+import"./assets/styles-0d4a1689.js";import{t as l}from"./assets/vendor-71ac5ada.js";const r="selectedFilters",o=document.querySelector(".feedback-form");m();o.addEventListener("submit",s);o.addEventListener("input",l(i,500));function s(e){e.preventDefault(),new FormData(o).forEach((a,n)=>console.log(a,n)),e.currentTarget.reset(),localStorage.removeItem(r)}function i(e){let t=localStorage.getItem(r);t=t?JSON.parse(t):{},t[e.target.name]=e.target.value,localStorage.setItem(r,JSON.stringify(t))}function m(){let e=localStorage.getItem(r);e&&(e=JSON.parse(e),Object.entries(e).forEach(([t,a])=>{o.elements[t].value=a}))}
 //# sourceMappingURL=commonHelpers2.js.map
